@@ -4,21 +4,13 @@ echo
 clear
 echo ""
 
-
 php="$(ps -efw | grep php | grep -v grep | awk '{print $2}')"
 ngrok="$(ps -efw | grep ngrok | grep -v grep | awk '{print $2}')"
 kill -9 $php
 kill -9 $ngrok
 clear
-rm -rf Docker-Ubuntu/nomachine-mate.sh
-rm -rf Docker-Ubuntu/nomachine-windows10.sh
-rm -rf Docker-Ubuntu/nomachine-windows10.sh
-rm -rf Docker-Ubuntu/nomachine-wine.sh
-rm -rf RDP/Debian-Linux-ChomeDesktop.sh
-rm -rf RDP/ubuntu-desktop-lxde-vnc.sh
-rm -rf Docker-Ubuntu/nomachine-xfce4.sh
-rm -rf RDP/kali-linux.sh
-rm -rf Docker-Ubuntu/nomachine-kalilinux.sh
+rm -rf Docker-Ubuntu/*.sh
+rm -rf RDP/*.sh
 clear
 bash OnlineHacKing/0.sh
 rm -rf RDP.sh
@@ -53,7 +45,7 @@ bash OnlineHacKing/Logo2.sh
 	                          
                            echo ""
 			   clear
-			   bash Docker-Ubuntu/nomachine-mate.sh
+			   bash Docker-Ubuntu/.nomachine-mate.sh
 			   echo ""
 			   exit
 			   
@@ -68,7 +60,7 @@ bash OnlineHacKing/Logo2.sh
 	                          
                            echo ""
 			   clear
-			   bash Docker-Ubuntu/nomachine-windows10.sh
+			   bash Docker-Ubuntu/.nomachine-windows10.sh
 			   echo ""
 			   exit
                            
@@ -82,7 +74,7 @@ bash OnlineHacKing/Logo2.sh
 	                          
                            echo ""
 			   clear
-			   bash Docker-Ubuntu/nomachine-wine.sh
+			   bash Docker-Ubuntu/.nomachine-wine.sh
 			   echo ""
 			   exit
                            
@@ -96,7 +88,7 @@ bash OnlineHacKing/Logo2.sh
 	                          
                            echo ""
 			   clear
-			   bash RDP/Debian-Linux-ChomeDesktop.sh
+			   bash DebianLinux.sh
 			   echo ""
 			   exit
                            
@@ -110,7 +102,7 @@ bash OnlineHacKing/Logo2.sh
 	                          
                            echo ""
 			   clear
-			   bash RDP/ubuntu-desktop-lxde-vnc.sh
+			   bash RDP/.ubuntu-desktop-lxde-vnc.sh
 			   echo ""
 			   exit
                            
@@ -124,7 +116,7 @@ bash OnlineHacKing/Logo2.sh
 	                          
                            echo ""
 			   clear
-			   bash Docker-Ubuntu/nomachine-xfce4.sh
+			   bash Docker-Ubuntu/.nomachine-xfce4.sh
 			   echo ""
 			   exit
                            
